@@ -19,7 +19,7 @@ That is great for neutral settlement, but it does not create any reason for agen
 - hold the project token for holder-only perks
 - keep USDC as the fallback rail for everyone else
 
-The goal is simple: make a Solana token useful inside the API economy agents are already paying into.
+The goal is simple: make a Solana token useful inside the x402 economy by giving agents a reason to transact with it and keep holding it.
 
 ## Example holder-only perks
 
