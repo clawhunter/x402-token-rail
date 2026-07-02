@@ -1,0 +1,21 @@
+{
+  "name": "x402-token-rail",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Framework-agnostic core for accepting a native Solana token as an x402 payment option at a discount, and token-gating perks on holding it. Built + dogfooded by clawhunter.fun.",
+  "type": "module",
+  "license": "MIT",
+  "//": "This folder is self-contained (no web-framework imports) — copy it into your project. Not yet published to npm.",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "peerDependencies": {
+    "@x402/core": ">=2.15.0"
+  },
+  "peerDependenciesMeta": {
+    "@x402/core": {
+      "optional": true
+    }
+  },
+  "keywords": ["x402", "solana", "spl-token", "token-2022", "agents", "payments"]
+}

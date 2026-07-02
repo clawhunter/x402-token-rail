@@ -1,0 +1,34 @@
+{
+  "name": "x402-token-rail-demo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Demo/template x402 API that accepts a native Solana token at a discount and gates perks on holding it. Built + dogfooded by clawhunter.fun.",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "check": "tsx scripts/check.ts"
+  },
+  "dependencies": {
+    "@payai/facilitator": "^2.4.3",
+    "@x402/core": "^2.15.0",
+    "@x402/next": "^2.15.0",
+    "@x402/svm": "^2.15.0",
+    "next": "^16.2.7",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "tsx": "^4.19.2",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
