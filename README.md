@@ -1,11 +1,35 @@
 # x402-token-rail
 
-Add a native Solana token as an x402 payment option at a configurable discount, and gate perks on holding it.
+A small open-source module that lets Solana x402 APIs accept their own token as an optional payment rail, offer a discount for paying with it, and unlock perks for holders.
 
-For projects that already serve paid x402 routes (USDC). This gives your token a concrete on-API use: a reason for agents to acquire it (discount on every call) and to hold it (holders-only perks). Two levers, one small module.
+This is for Solana projects, agent tools, data APIs, and AI services that already use x402 and want their own token to have real usage inside x402 payment flows.
 
 > Built and dogfooded by **[clawhunter.fun](https://clawhunter.fun)**, running in
 > production on Solana mainnet (Token-2022).
+
+## Why this exists
+
+x402 makes it easy for agents to pay APIs per request, usually with USDC.
+
+That is great for neutral settlement, but it does not create any reason for agents to interact with a project’s own token.
+
+`x402-token-rail` adds that missing incentive layer:
+
+- pay with the project token for cheaper API calls
+- hold the project token for holder-only perks
+- keep USDC as the fallback rail for everyone else
+
+The goal is simple: make a Solana token useful inside the API economy agents are already paying into.
+
+## Example holder-only perks
+
+Holder perks can be anything your API can safely add after settlement:
+
+- bonus response fields
+- higher rate limits
+- priority execution
+- private endpoints
+- early access to new routes
 
 ---
 
